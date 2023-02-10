@@ -10,6 +10,6 @@ class CategoryAdmin(admin.ModelAdmin):
 
 @admin.register(ProcessedImage)
 class ProcessedImageAdmin(admin.ModelAdmin):
-    list_display = ["image", "status"]
+    list_display = ["created_at", "image", "status"]
     list_filter = ["status", "categories"]
     filter_horizontal = ["categories"]

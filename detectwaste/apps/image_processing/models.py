@@ -34,8 +34,8 @@ class ProcessedImage(models.Model):
         (STATUS_IN_PROGRESS, _("In progress")),
         (STATUS_PROCESSED, _("Processed")),
     ]
-    created = models.DateTimeField(_("Created"), auto_now_add=True)
-    processed = models.DateTimeField(_("Processed"), blank=True, null=True)
+    created_at = models.DateTimeField(_("Created"), auto_now_add=True)
+    processed_at = models.DateTimeField(_("Processed"), blank=True, null=True)
     image = models.ImageField(_("Image"), upload_to=upload_to)
     status = models.CharField(
         _("Status"), max_length=1, choices=STATUS_CHOICES, default=STATUS_IN_PROGRESS
@@ -45,7 +45,7 @@ class ProcessedImage(models.Model):
     )
 
     class Meta:
-        ordering = ["-created"]
+        ordering = ["-created_at"]
         verbose_name = _("Processed Image")
         verbose_name_plural = _("Processed Images")
 

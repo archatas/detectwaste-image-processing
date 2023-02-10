@@ -9,11 +9,11 @@ class CategorySerializer(ModelSerializer):
 
 
 class ProcessedImageSerializer(ModelSerializer):
-    created = ReadOnlyField()
-    processed = ReadOnlyField()
+    created_at = ReadOnlyField()
+    processed_at = ReadOnlyField()
     status = ReadOnlyField()
     categories = CategorySerializer(many=True, read_only=True)
 
     class Meta:
         model = ProcessedImage
-        fields = ["id", "image", "created", "processed", "status", "categories"]
+        fields = ["id", "image", "created_at", "processed_at", "status", "categories"]
