@@ -49,15 +49,15 @@ Create the superuser, such as "admin":
 
 ### 8. Create some categories for classification
 
-Go to `http://0.0.0.0:8000/en/admin/image_processing/category/` and add some categories for waste, such as "Glass bottles", "Metal cans", "Paper", etc.
+Go to `http://127.0.0.1:8000/en/admin/image_processing/category/` and add some categories for waste, such as "Glass bottles", "Metal cans", "Paper", etc.
 
 ### 9. Try uploading an images
 
-- Go to `http://0.0.0.0:8000/en/`.
+- Go to `http://127.0.0.1:8000/en/`.
 - Login with your superuser credentials.
 - Upload an image.
-- Go to `http://0.0.0.0:8000/en/admin/image_processing/processedimage/` to classify the image. Later this will happen automatically in the background by machine learning algorithm.
-- Switch back to `http://0.0.0.0:8000/en/` and retrieve the classified results.
+- Go to `http://127.0.0.1:8000/en/admin/image_processing/processedimage/` to classify the image. Later this will happen automatically in the background by machine learning algorithm.
+- Switch back to `http://127.0.0.1:8000/en/` and retrieve the classified results.
 
 ## Further development
 
