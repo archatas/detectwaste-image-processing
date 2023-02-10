@@ -2,6 +2,8 @@
 
 Proof of concept for uploading images via an API, processing them in the background, and then checking for the response by another API call.
 
+[Detect Waste](https://detectwaste.netlify.app/) was a part of the Sustainability Hackathon organized by [N3XTCODER](https://n3xtcoder.org/).
+
 ## How to run this prototype
 
 ### 1. Download the code
